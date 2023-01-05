@@ -34,7 +34,7 @@ app.get('/', async (req, res) => {
     });
 });  
 
-module.exports = app  
+module.exports = app;  
 
 const PORT = parseInt(process.env.PORT) || 3000;
 
