@@ -16,15 +16,14 @@
             @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
         </style>
     </head>
-    <body style="font-family:'IBM Plex Mono', monospace; background-color:rgb(34, 34, 34); color:rgb(104, 189, 71);">
+    <body style="font-family:'IBM Plex Mono', monospace; background-color:rgb(17, 17, 17); color:rgb(110, 194, 77);">
         <p>One Liner Takeaways by Engramar Bollas</p>
         <% for (var i = 0; i < allBooks.length; i++) { %>
             <div style="text-align:left class="timeline-time">
                 <span><%= allBooks[i].date %> | </span>                
                 <span><%= allBooks[i].title %> | </span>
                 <span><%= allBooks[i].author %> | </span>
-                <span><%= allBooks[i].keyTakeaways %> | </span>
-                <span><%= allBooks[i].topics %> | </span>
+                <span><%= allBooks[i].keyTakeaways %></span>
             </div>
         <br/>
         <% } %>
