@@ -18,7 +18,6 @@ module.exports = () => {
     config(); //invoking the dotenv config here   
 };
 
-console.log(process.env.DB_URI)    
 mongoose.connect(`${process.env.DB_URI}`, {dbName: 'books_db'})    
     .then(() => console.log('Connected to MongoDB...'))
     .catch(err => console.error('Could not connect to MongoDB...', err))
