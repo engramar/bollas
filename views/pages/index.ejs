@@ -20,11 +20,11 @@
         <p>One Liner Takeaways by Engramar Bollas</p>
         <% for (var i = 0; i < allBooks.length; i++) { %>
             <div style="text-align:left class="timeline-time">
-                <span><%= allBooks[i].date %></span>
-                <span><%= allBooks[i].title %></span>
-                <span><%= allBooks[i].author %></span>
-                <span><%= allBooks[i].keyTakeaways %></span>
-                <span><%= allBooks[i].topics %></span>
+                <span><%= allBooks[i].date %> | </span>                
+                <span><%= allBooks[i].title %> | </span>
+                <span><%= allBooks[i].author %> | </span>
+                <span><%= allBooks[i].keyTakeaways %> | </span>
+                <span><%= allBooks[i].topics %> | </span>
             </div>
         <br/>
         <% } %>
